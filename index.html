@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+    <title>Cesar e base64r</title>
+</head>
+<body>
+    <section class="container">
+
+            <form class="menu">
+
+                <h1 class="titulo-form">Escolha uma Cifra</h1>
+
+                <select id="cifras-escolha">
+                    <option value="" disabled selected>Opções de cifras ↓</option>
+                    <option value="cesar">Cesar</option>
+                    <option value="base64">Base64</option>
+                </select>
+
+                <input type="number" id="incremento" placeholder="Escolha a chave CESAR!">
+
+                <div id="radios">
+                    <input type="radio" name="decodeECodi" id="key1">
+                    <label for="decode"><strong>Decodificar</strong></label>
+                    <input type="radio" name="decodeECodi" id="key">
+                    <label for="code"><strong>Codificar</strong></label>
+                </div>
+                
+                <textarea id="code-message" name="mensagem-inicial" class="form-input"
+                    placeholder="Digite o que queira criptografar ou descriptografar aqui" cols="30" rows="3"
+                    maxlength="90" onkeyup="codifica()"></textarea>
+
+                <textarea id="decode-message" name="mensagem-final" class="form-input"
+                    placeholder="Sua mensagem criptografada ou descriptografada aparecerá aqui" cols="30" rows="3"
+                    maxlength="90" readonly style="cursor:auto;"></textarea>
+
+                <input type="submit" id="limpar-form" value="Limpar">
+            </form>
+
+    </section>
+ 
+    <footer class="pezito">
+        Desenvolvido por <a href="https://www.linkedin.com/in/elderschmoeller/">Elder Schmöeller</a>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
